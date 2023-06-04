@@ -17,7 +17,7 @@ all:	 $(O)/sndserver
 
 clean:
 	rm -f *.o *~ *.flc
-	rm -f linux/*
+	rm -f build/*
 
 # Target
 $(O)/sndserver: \
@@ -35,5 +35,3 @@ $(O)/sndserver: \
 # Rule
 $(O)/%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-
-
